@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+/* Resuable css ----------------- */
+.top-header {
+    text-align: center;
+    margin-bottom: 5em;
+ }
+ .top-header h1 {
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+    margin-bottom: 15px;
+ }
