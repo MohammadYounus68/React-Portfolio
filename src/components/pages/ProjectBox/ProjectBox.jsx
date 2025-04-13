@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectBox.css'; // CSS ফাইল ইম্পোর্ট
-import useScrollReveal from '../../hooks/useScrollReveal';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 
 const ProjectBox = () => {

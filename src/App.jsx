@@ -1,9 +1,12 @@
 import './App.css'
-import FeaturedBox from './components/Featured-box/FeaturedBox'
+
 import Navbar from './components/Navbar/Navbar'
-import AboutBox from './components/AboutBox/AboutBox';
-import ProjectBox from './components/ProjectBox/ProjectBox';
-import ContactBox from './components/ContactBox/ContactBox';
+import FeaturedBox from '../src/components/pages/Featured-box/FeaturedBox'
+import AboutBox from '../src/components/pages/AboutBox/AboutBox'
+import ProjectBox from '../src/components/pages/ProjectBox/ProjectBox'
+import ContactBox from '../src/components/pages/ContactBox/ContactBox'
+
+
 
 function App() {
   return (

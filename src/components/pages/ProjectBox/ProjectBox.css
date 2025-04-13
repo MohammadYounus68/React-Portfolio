@@ -1,4 +1,4 @@
-
+/* 
 .top-header {
     margin-top: 3em;
 }
@@ -6,9 +6,8 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
-}
+} */
 
-/* Projects Section */
 /* Projects Section */
 .projects-section {
     padding: 4rem 1rem;
@@ -34,17 +33,18 @@
   
   /* Individual Project Card */
   .project-card {
-    padding: 5px 10px 5px 10px;
-    background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    padding: 10px 10px 5px 10px;
+    /* background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%); */
     border-radius: 12px;
-    border: 10px;
-    box-shadow: 5 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 5 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     width: 330px; /* নির্দিষ্ট প্রস্থ */
     height: 370px; /* নির্দিষ্ট উচ্চতা */
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    transition: transform 0.3s ease;
   }
   
   .project-card:hover {

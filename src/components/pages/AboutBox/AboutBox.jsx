@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutBox.css';
-import useScrollReveal from '../../hooks/useScrollReveal';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 const AboutBox = () => {
     const skills = {

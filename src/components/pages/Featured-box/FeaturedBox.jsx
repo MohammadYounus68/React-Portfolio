@@ -1,7 +1,7 @@
 import React, { useEffect,useRef } from 'react';
 import Typed from 'typed.js';
 import './FeaturedBox.css'
-import avatar from '../../assets/images/avatar.jpg'
+import myPic from '../../../assets/images/myPic.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -10,7 +10,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { faSquareFacebook, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 //import scroll hook 
-import useScrollReveal from '../../hooks/useScrollReveal';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 // Add icons to the library
 library.add(faDownload, faSquareFacebook, faSquareGithub);
@@ -85,7 +85,7 @@ const FeaturedBox = () => {
 
             <div className="featured-image">
                     <div className="image">
-                        <img src={avatar} alt="avatar"/>
+                        <img src={myPic} alt="myPic"/>
                     </div>
             </div>
 

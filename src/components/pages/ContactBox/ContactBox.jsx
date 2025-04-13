@@ -8,7 +8,7 @@ library.add(faEnvelope, faPhone, faPaperPlane, faAnglesRight, faFacebook, faLink
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 //import useScrollReveal hook
-import useScrollReveal from '../../hooks/useScrollReveal';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 const ContactBox = () => {
 
@@ -39,7 +39,7 @@ const ContactBox = () => {
               <p className='email'>
                 <FontAwesomeIcon icon="envelope" /> <a href="https://mail.google.com/mail/?view=cm&to=mohammadyounus3830@gmail.com" target="_blank">mohammadyounus3830@gmail.com</a>
               </p>
-              <p>
+              <p className='phone'>
                 <FontAwesomeIcon icon="phone" /> +880 01761030368
               </p>
               <p style={{ color: 'white' }}>

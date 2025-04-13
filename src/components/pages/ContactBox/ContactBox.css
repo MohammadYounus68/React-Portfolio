@@ -2,9 +2,10 @@
 
 .contact-section {
     padding: 60px 20px;
-    margin-top: 20px;
+    margin: 20px 40px 20px 40px;
     color: black;
     font-family: 'Segoe UI', sans-serif;
+    
   }
   
   .top-header-contact {
@@ -31,11 +32,12 @@
   
   .left-col {
     flex: 1 1 45%;
-    background-color: #1e293b;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(255,255,255,0.05);
   }
+  
   .right-col {
     background-color: rgba(79,88,123,0.24);
     padding: 20px 10px;
@@ -76,7 +78,10 @@
   .input-field {
     flex: 1 1 48%;
     padding: 12px;
+    /* border: none; */
+    /* border-color: red; */
     border: none;
+    outline: none;
     border-radius: 8px;
     font-size: 16px;
   }
@@ -88,6 +93,7 @@
     border-radius: 8px;
     font-size: 16px;
     /* border: none; */
+    outline: none;
     resize: vertical;
   }
   
