@@ -29,12 +29,17 @@
     flex-wrap: wrap;
   }
   
-  .contact-col {
+  .left-col {
     flex: 1 1 45%;
     background-color: #1e293b;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  }
+  .right-col {
+    background-color: rgba(79,88,123,0.24);
+    padding: 20px 10px;
+    border-radius: 10px;
   }
   
   .contact-infos h2 {
@@ -100,6 +105,11 @@
   .form-button .btn:hover {
     background-color: #0284c7;
   }
+  .contact-des a {
+      text-decoration: none;
+      
+  }
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -107,7 +117,7 @@
       flex-direction: column;
     }
   
-    .contact-col {
+    .left-col {
       flex: 1 1 100%;
       /* overflow: hidden; */
     }

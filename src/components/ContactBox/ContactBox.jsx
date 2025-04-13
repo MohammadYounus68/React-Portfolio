@@ -7,12 +7,20 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 library.add(faEnvelope, faPhone, faPaperPlane, faAnglesRight, faFacebook, faLinkedin);
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+//import useScrollReveal hook
+import useScrollReveal from '../../hooks/useScrollReveal';
+
 const ContactBox = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Form submitted!");
   };
+  useScrollReveal([
+    {name:'.top-header-contact',options:{origin:'top'}},
+    {name:'.left-col',options:{origin:'left'}},
+    {name:'.right-col',options:{origin:'right',interval:300}},
+  ]);
 
   return (
     <section className="section contact-section" id="contact">
@@ -22,30 +30,30 @@ const ContactBox = () => {
       </div>
       <div className="contact-row">
         {/* Left Column */}
-        <div className="contact-col">
+        <div className="left-col">
           <div className="contact-infos">
             <h2>
               Find Me <FontAwesomeIcon icon="angles-right" />
             </h2>
             <div className="contact-des">
-              <p>
-                <FontAwesomeIcon icon="envelope" /> Email: mohammadyounus3830@gmail.com
+              <p className='email'>
+                <FontAwesomeIcon icon="envelope" /> <a href="https://mail.google.com/mail/?view=cm&to=mohammadyounus3830@gmail.com" target="_blank">mohammadyounus3830@gmail.com</a>
               </p>
               <p>
-                <FontAwesomeIcon icon="phone" /> Tel: +880 01761030368
+                <FontAwesomeIcon icon="phone" /> +880 01761030368
               </p>
               <p style={{ color: 'white' }}>
-                <FontAwesomeIcon icon={['fab', 'facebook']} /> Fb: <a href="https://www.facebook.com/saurav.ahshan/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <FontAwesomeIcon icon={['fab', 'facebook']} /> <a href="https://www.facebook.com/saurav.ahshan/" target="_blank" rel="noopener noreferrer">Facebook</a>
               </p>
               <p style={{ color: 'white' }}>
-                <FontAwesomeIcon icon={['fab', 'linkedin']} /> LinkedIn: <a href="https://www.linkedin.com/in/abu-mohammad-younus-2557221b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <FontAwesomeIcon icon={['fab', 'linkedin']} />  <a href="https://www.linkedin.com/in/abu-mohammad-younus-2557221b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </p>
             </div>
           </div>
         </div>
 
         {/* Right Column */}
-        <div className="col">
+        <div className="right-col">
           <form id="contact-form" onSubmit={handleSubmit}>
             <div className="form-control">
               <div className="form-inputs">

@@ -1,16 +1,11 @@
 .container {
     width: 100%;
-    background-color: #ffffff;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    /* background-color: #ffffff; */
 }
 
+
 .section {
-    padding-inline: 2em;
+    padding-inline: 5em;
  }
  .top-header {
     text-align: center;

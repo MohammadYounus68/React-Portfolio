@@ -1,5 +1,10 @@
-
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    /* background:linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64% 100%); */
+    /* background-repeat: no-repeat; */
+}
 
 

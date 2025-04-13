@@ -10,10 +10,11 @@ const AboutBox = () => {
     };
 
     // scroll code 
+    //array of object pass by useScrollReveal hook
     useScrollReveal([
         { name: '.top-header', options: { origin: 'top' } },
-    { name: '.about-info', options: { origin: 'left' } },
-    { name: '.skills-box', options: { origin: 'right', interval: 200 } },
+        { name: '.about-info', options: { origin: 'left' } },
+        { name: '.skills-box', options: { origin: 'right', interval: 200 } },
     ]);
     return (
         <section className='section' id='about'>
