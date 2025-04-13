@@ -1,15 +1,24 @@
 import React from 'react';
 import './AboutBox.css';
+import useScrollReveal from '../../hooks/useScrollReveal';
+
 const AboutBox = () => {
     const skills = {
         frontend: ['HTML','CSS','Bootstrap', 'React', 'jQuery'],
         backend: ['PHP','JAVA','C++'],
         database: ['MySQL']
     };
+
+    // scroll code 
+    useScrollReveal([
+        { name: '.top-header', options: { origin: 'top' } },
+    { name: '.about-info', options: { origin: 'left' } },
+    { name: '.skills-box', options: { origin: 'right', interval: 200 } },
+    ]);
     return (
         <section className='section' id='about'>
             <div className="top-header">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
             </div>
             <div className="row">
                 <div className="col">

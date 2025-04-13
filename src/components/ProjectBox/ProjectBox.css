@@ -1,0 +1,176 @@
+
+.top-header {
+    margin-top: 3em;
+}
+.top-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Projects Section */
+/* Projects Section */
+.projects-section {
+    padding: 4rem 1rem;
+    background-color: #ffffff; /* পিওর হোয়াইট ব্যাকগ্রাউন্ড */
+    text-align: center;
+
+  }
+
+
+  /* padding custom vbe use  */
+  .padding-custom {
+    padding: 20px 10px;
+  }
+  
+  /* Grid Layout for Cards */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(330px, 1fr)); /* কার্ডের প্রস্থ 330px */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Project Card */
+  .project-card {
+    padding: 5px 10px 5px 10px;
+    background-color: #ffeded;
+    border-radius: 12px;
+    border: 10px;
+    box-shadow: 5 4px 12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 330px; /* নির্দিষ্ট প্রস্থ */
+    height: 370px; /* নির্দিষ্ট উচ্চতা */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    height: 150px; /* ইমেজের উচ্চতা কার্ডের সাথে মানানসই */
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Project Content */
+  .project-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 220px; /* কন্টেন্ট এরিয়ার উচ্চতা (370 - 150 = 220px) */
+  }
+  
+  .project-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-content p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Learn More Button */
+
+
+  .project-button-style {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content:center;
+  }
+
+  .project-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
+  }
+  
+  .project-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #8f94fb, #4e54c8);
+    box-shadow: 0 6px 20px rgba(78, 84, 200, 0.5);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .top-header h1 {
+      font-size: 2rem;
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr; /* মোবাইলে একটি কলাম */
+      justify-items: center; /* কার্ডগুলো কেন্দ্রে থাকবে */
+    }
+  
+    .project-card {
+      width: 300px; /* মোবাইলে প্রস্থ কিছুটা কম */
+      height: 350px; /* মোবাইলে উচ্চতা কিছুটা কম */
+    }
+  
+    .project-image {
+      height: 140px;
+    }
+  
+    .project-content {
+      height: 210px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-section {
+      padding: 2rem 0.5rem;
+    }
+  
+    .project-card {
+      width: 280px; /* ছোট স্ক্রিনে আরও ছোট */
+      height: 330px;
+    }
+  
+    .project-image {
+      height: 130px;
+    }
+  
+    .project-content {
+      height: 200px;
+    }
+  
+    .project-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .project-content p {
+      font-size: 0.8rem;
+    }
+  
+    .project-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+    }
+  }

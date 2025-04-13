@@ -1,6 +1,9 @@
-.section {
-    padding-block: 5em;
-}
+
+#about.section {
+   background-color: #ffffff;
+   
+ } 
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -21,7 +24,7 @@
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(247, 244, 244);
     box-shadow: 1px 8px 2px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
  }

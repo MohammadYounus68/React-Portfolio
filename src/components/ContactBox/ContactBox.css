@@ -1,0 +1,123 @@
+/* ContactSection.css */
+
+.contact-section {
+    padding: 60px 20px;
+    margin-top: 20px;
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .top-header-contact {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .top-header-contact h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .top-header-contact span {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-col {
+    flex: 1 1 45%;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  }
+  
+  .contact-infos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #facc15;
+  }
+  
+  .contact-des p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .contact-des i,
+  .contact-des svg {
+    margin-right: 10px;
+    color: #38bdf8;
+  }
+  
+  /* Form Styles */
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-inputs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-field {
+    flex: 1 1 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .text-area textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    /* border: none; */
+    resize: vertical;
+  }
+  
+  .form-button .btn {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button .btn:hover {
+    background-color: #0284c7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-row {
+      flex-direction: column;
+    }
+  
+    .contact-col {
+      flex: 1 1 100%;
+      /* overflow: hidden; */
+    }
+  
+    .form-inputs {
+      flex-direction: column;
+    }
+  
+    .input-field {
+      flex: 1 1 100%;
+    }
+  }
+  

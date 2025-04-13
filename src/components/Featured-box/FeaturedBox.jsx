@@ -1,6 +1,5 @@
 import React, { useEffect,useRef } from 'react';
 import Typed from 'typed.js';
-
 import './FeaturedBox.css'
 import avatar from '../../assets/images/avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,6 +9,8 @@ import {faDownload,faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { faSquareFacebook, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+//import scroll hook 
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 // Add icons to the library
 library.add(faDownload, faSquareFacebook, faSquareGithub);
@@ -17,6 +18,7 @@ library.add(faDownload, faSquareFacebook, faSquareGithub);
 // component for Featuredbox =======================
 const FeaturedBox = () => {
     /* Typing effect js code */
+    // typed.js use packege
     const typedRef = useRef(null);
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
@@ -31,7 +33,17 @@ const FeaturedBox = () => {
         return () => {
           typed.destroy();
         };
-      }, []);
+    }, []);
+
+    //useScrollReveal array of objet pass under the cod
+        useScrollReveal([
+            { name: '.featured-text', options: { origin: 'left', distance: '60px' } },
+            { name: '.featured-image', options: { origin: 'right', distance: '60px', delay: 200 } },
+            { name: '.featured-text-card', options: { delay: 300, origin: 'top' } },
+            { name: '.featured-text-info', options: { delay: 400, origin: 'bottom' } },
+            { name: '.featured-text-btn', options: { delay: 500, origin: 'bottom', interval: 200 } },
+            { name: '.social-icons .icon', options: { interval: 150, origin: 'bottom' } },
+          ]); 
     return (
         <section className='featured-box' id='home'> 
             <div className='featured-text'>

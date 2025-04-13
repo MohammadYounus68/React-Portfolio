@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    
+    background-color: #ffffff;
 }
 * {
     margin: 0;
@@ -8,13 +8,18 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-/* Resuable css ----------------- */
-.top-header {
+
+.section {
+    padding-inline: 2em;
+ }
+ .top-header {
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 2em;  
  }
  .top-header h1 {
     font-weight: 600;
     color: rgb(68, 68, 68);
     margin-bottom: 15px;
  }
+
+ /* section global css--------- */
