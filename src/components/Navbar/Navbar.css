@@ -1,11 +1,5 @@
-/* src/Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-.header {
-    position: fixed;
-    z-index: 1;
-}
-/* নেভবারের বেসিক স্টাইল */
 nav.header {
   position: fixed;
   top: 0;
@@ -21,14 +15,6 @@ nav.header {
   box-sizing: border-box;
 }
 
-/* স্ক্রল করলে বর্ডার এবং শ্যাডো
-nav.header.scrolled {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(110, 87, 224, 0.5); 
-  height: 3.5rem;
-} */
-
-/* লোগো */
 .nav-logo {
   position: relative;
   display: flex;
@@ -50,7 +36,6 @@ nav.header.scrolled {
   color: #444444;
 }
 
-/* মেনু */
 .nav-menu {
   display: flex;
 }
@@ -65,6 +50,7 @@ nav.header.scrolled {
 .nav-list {
   position: relative;
 }
+
 .nav-link {
   text-decoration: none;
   color: rgb(68, 68, 68);
@@ -73,6 +59,10 @@ nav.header.scrolled {
   font-size: 1rem;
   transition: color 0.3s ease;
   position: relative;
+}
+
+.active-link {
+  color: rgb(110, 87, 224);
 }
 
 .active-link::after {
@@ -86,8 +76,12 @@ nav.header.scrolled {
   background-color: rgb(110, 87, 224);
   border-radius: 50%;
 }
+/*শুধু active-link এর পরে circle আসবে */
+.nav-link.active-link + .circle {
+  opacity: 1;
+  transform: scale(1);
+}
 
-/* বাটন */
 .btn {
   font-weight: 500;
   padding: 0.6rem 1.2rem;
@@ -105,14 +99,12 @@ nav.header.scrolled {
   color: rgb(255, 255, 255);
 }
 
-/* মেনু বাটন */
 .nav-menu-btn {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/* রেসপন্সিভ মেনু */
 .nav-menu.responsive {
   display: block;
   position: absolute;
@@ -140,23 +132,17 @@ nav.header.scrolled {
 }
 
 
-  
 
-  
 
-/* মিডিয়া কোয়েরি */
+
+
 @media screen and (max-width: 768px) {
+  .downloadBtn {
+    display: none;
+  }
   nav.header {
     height: 3.5rem;
     padding: 0 3vw;
-  }
-  nav.header.scrolled {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(110, 87, 224, 0.5);
-    height: 3rem;
-  }
-  .downloadBtn {
-    display: none;
   }
   .nav-logo .nav-name {
     font-size: 1.4rem;
@@ -187,11 +173,6 @@ nav.header.scrolled {
   }
   nav.header {
     height: 3rem;
-  }
-  nav.header.scrolled {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(110, 87, 224, 0.5);
-    height: 2.5rem;
   }
   .nav-logo .nav-name {
     font-size: 1.2rem;
