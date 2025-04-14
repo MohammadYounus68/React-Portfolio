@@ -63,7 +63,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+a{
+    text-decoration: none;
+}
 .featured-text-btn > .blue-btn:hover {
     background-color: rgb(40, 91, 212);
 }
