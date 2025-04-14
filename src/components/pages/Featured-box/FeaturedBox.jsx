@@ -1,7 +1,6 @@
 import React, { useEffect,useRef } from 'react';
 import Typed from 'typed.js';
 import './FeaturedBox.css'
-import myPic from '../../../assets/images/myPic.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -89,7 +88,7 @@ const FeaturedBox = (props) => {
 
             <div className="featured-image">
                     <div className="image">
-                        <img src={myPic} alt="myPic"/>
+                        <img src="/assets/images/myPic.jpg" alt="myPic"/>
                     </div>
             </div>
 

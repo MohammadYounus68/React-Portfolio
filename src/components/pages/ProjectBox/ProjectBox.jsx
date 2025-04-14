@@ -10,7 +10,7 @@ const ProjectBox = () => {
           title: "Pioneer Bank System",
           description:
             "Pioneer Bank is a web application where users can perform deposit and withdrawal transactions and view their updated balance instantly.",
-          image: "src/assets/images/pioneer.png",
+          image: "assets/images/pioneer.png",
           link: "https://pioneer-bank-live.netlify.app/",
           gitLink: "https://github.com/MohammadYounus68/Pioneer-bank",
         },
@@ -18,7 +18,7 @@ const ProjectBox = () => {
           title: "Emazon Online Shopping Platform",
           description:
             " Shop items and instantly view detailed order summaries with total cost.",
-          image: "src/assets/images/emazon.png",
+          image: "assets/images/emazon.png",
           link: "https://emazon-clone0.netlify.app/",
           gitLink: "https://github.com/MohammadYounus68/emazon/tree/main",
         },
@@ -26,7 +26,7 @@ const ProjectBox = () => {
           title: "Lyrics Detector System",
           description:
             "Users can type in a song name, click the search button, and instantly retrieve the lyrics.",
-          image: "src/assets/images/lyrics.png",
+          image: "assets/images/lyrics.png",
           link: "https://lyrics-detector.netlify.app/",
           gitLink: "https://github.com/MohammadYounus68/lyrics-detector",
         }
