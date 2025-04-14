@@ -2,7 +2,7 @@
     width: 100%;
    /* background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
    /* background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%); */
-   background-image: url('./assets/images/background.jpg');
+   background-image: url('/assets/images/bg.jpg');
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
