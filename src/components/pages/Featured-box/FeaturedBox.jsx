@@ -16,7 +16,7 @@ import useScrollReveal from '../../../hooks/useScrollReveal';
 library.add(faDownload, faSquareFacebook, faSquareGithub);
 
 // component for Featuredbox =======================
-const FeaturedBox = () => {
+const FeaturedBox = (props) => {
     /* Typing effect js code */
     // typed.js use packege
     const typedRef = useRef(null);
@@ -65,7 +65,11 @@ const FeaturedBox = () => {
                     <a href="#contact-from">
                         <button className='btn blue-btn'>Hire Me</button>
                     </a>
-                    <button className="btn downloadBtn">Download CV <FontAwesomeIcon icon={faDownload}/></button>
+                    <button
+                        className="btn downloadBtn"
+                        onClick={props.handleDownloadCV}
+                     >
+                        Download CV <FontAwesomeIcon icon={faDownload}/></button>
                 </div>
                 <div className="social-icons">
                     <div className="icon">

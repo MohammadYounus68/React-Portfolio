@@ -17,7 +17,7 @@ nav.header {
   height: 4.5rem;
   padding: 0 5vw;
   transition: all 0.3s ease;
-  /* z-index: 100; */
+  z-index: 100;
   box-sizing: border-box;
 }
 
@@ -63,6 +63,15 @@ nav.header.scrolled {
 }
 
 .nav-list {
+  position: relative;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+  font-weight: 500;
+  padding: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
   position: relative;
 }
 
@@ -130,33 +139,8 @@ nav.header.scrolled {
   display: block;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: rgb(68, 68, 68);
-    font-weight: 500;
-    padding: 0 1rem;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    position: relative;
-  }
+
   
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -0.6rem;
-    transform: translateX(-50%);
-    width: 0.4rem;
-    height: 0.4rem;
-    background-color: rgb(110, 87, 224);
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .nav-link.active-link::after {
-    opacity: 1;
-  }
 
   
 
@@ -170,6 +154,9 @@ nav.header.scrolled {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(110, 87, 224, 0.5);
     height: 3rem;
+  }
+  .downloadBtn {
+    display: none;
   }
   .nav-logo .nav-name {
     font-size: 1.4rem;
@@ -195,6 +182,9 @@ nav.header.scrolled {
 }
 
 @media screen and (max-width: 480px) {
+  .downloadBtn {
+    display: none;
+  }
   nav.header {
     height: 3rem;
   }

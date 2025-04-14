@@ -17,7 +17,7 @@ const AboutBox = () => {
         { name: '.skills-box', options: { origin: 'right', interval: 200 } },
     ]);
     return (
-        <section className='section' id='about'>
+        <section className='section about-section' id='about'>
             <div className="top-header">
                 <h2>About Me</h2>
             </div>

@@ -32,8 +32,10 @@ const ProjectBox = () => {
         }
       ];
       useScrollReveal([
-          {name:'.project-grid',options:{origin:'bottom',distance:'40px',delay:200,}},
-          {name:'.project-card',options:{origin:'bottom',distance:'60px',delay:300,interval:500}},
+          { name: '.top-header', options: { origin: 'top' } },
+          { name: '.top-header', options: { origin: 'bottom' } },
+          {name:'.project-grid',options:{origin:'bottom',distance:'40px'}},
+          {name:'.project-card',options:{origin:'bottom',distance:'60px',interval:500}},
       ]);
     return (
         <section className="section" id='projects'>

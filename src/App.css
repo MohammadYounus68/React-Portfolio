@@ -6,19 +6,20 @@
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
+   width: 100%;
+   position: relative;
   
 }
-
-
 .section {
-    padding-inline: 5em;
-    margin-top: 40px;
- }
+   padding-block: 5em;
+   
+}
+
  .top-header {
     text-align: center;
     margin-bottom: 6em;  
  }
- .top-header h1 {
+ .top-header h2 {
     font-weight: 600;
     color: rgb(68, 68, 68);
     margin-bottom: 15px;

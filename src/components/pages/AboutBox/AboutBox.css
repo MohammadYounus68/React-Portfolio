@@ -1,5 +1,13 @@
 /* AboutBox.css */
 
+.about-section {
+    padding: 100px 20px;
+    margin: 40px 40px 20px 40px;
+    color: black;
+    /* font-family: 'Segoe UI', sans-serif; */
+    min-height: 85vh;
+
+  }
 /* Base styles for the section */
 .row {
    display: flex;
@@ -73,14 +81,14 @@
 }
 
 /* Top header */
-.top-header {
+/* .top-header {
    text-align: center;
    margin-bottom: 2rem;
 }
 
 .top-header h2 {
-   font-size: 2rem; /* Relative font size */
-}
+   font-size: 2rem; 
+} */
 
 /* Media Queries for Responsiveness */
 

@@ -3,7 +3,7 @@ import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faDownload } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     useEffect(() => {
       const sections = document.querySelectorAll('section[id]');
@@ -49,12 +49,12 @@ const Navbar = () => {
     }
   };
 
-  const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/CV Abu Mohammad Younus.pdf';
-    link.download = 'CV Abu Mohammad Younus.pdf';
-    link.click();
-  };
+  // const handleDownloadCV = () => {
+  //   const link = document.createElement('a');
+  //   link.href = '/assets/CV Abu Mohammad Younus.pdf';
+  //   link.download = 'CV Abu Mohammad Younus.pdf';
+  //   link.click();
+  // };
 
   return (
     <nav id="header" className="header">
@@ -77,7 +77,7 @@ const Navbar = () => {
       <div className="nav-button">
         <button
           className="btn downloadBtn"
-          onClick={handleDownloadCV}
+          onClick={props.handleDownloadCV}
           aria-label="Download CV"
         >
           Download CV <FontAwesomeIcon icon={faDownload} />
