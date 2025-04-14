@@ -34,7 +34,7 @@ nav.header {
   right: -1.3rem;
   font-size: 4rem;
   color: #444444;
-  /* line-height: 1; */
+  line-height: 1;
 }
 
 .nav-menu {
