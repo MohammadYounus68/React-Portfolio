@@ -137,4 +137,12 @@
       flex: 1 1 100%;
     }
   }
-  
+  @media(max-width: 412px) {
+    .contact-row {
+        
+    }
+      .contact-section {
+        margin: 0;
+        padding:0;
+      }
+  }   
